@@ -1,0 +1,15 @@
+name: python-linter
+
+on: push
+
+jobs:
+  super-lint:
+    name: lint python code base
+    # runs-on: [ self-hosted ]
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: run Super-Linter
+        uses: github/super-linter@v3
