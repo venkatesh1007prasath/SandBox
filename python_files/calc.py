@@ -1,4 +1,6 @@
-import math
+"""
+Module to provide a simple calculation interface
+"""
 
 
 def add(a, b):
